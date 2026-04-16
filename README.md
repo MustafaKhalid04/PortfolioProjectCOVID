@@ -1,38 +1,34 @@
+![COVID-19 Data Analysis](https://images.unsplash.com/photo-1584036561566-baf8f5f1b144)
+
 # COVID-19 Data Analysis (SQL Project)
 
-This project analyzes global COVID-19 data using SQL to uncover trends in cases, deaths, and vaccinations.
+This project analyzes global COVID-19 data using SQL to uncover trends in infections, deaths, and vaccination progress. The goal is to turn raw data into meaningful insights using structured queries and analytical techniques.
+
+---
 
 ## Objectives
 - Analyze infection and death rates across countries
-- Compare cases relative to population
-- Identify countries with highest impact
+- Compare COVID impact relative to population
+- Identify countries with highest infection and death rates
 - Track vaccination progress over time
+- Apply advanced SQL techniques for real-world analysis
 
-## Key Insights
-
-1) Countries show large differences in infection rate relative to population  
-2) Death percentage varies significantly across regions  
-3) Continents like Europe and North America show high total deaths  
-4) Vaccination rollout trends highlight differences in healthcare response  
+---
 
 ## Tools Used
 - SQL (MySQL / SQL Server)
 - Joins
+- Aggregations
+- Window Functions
+- Common Table Expressions (CTEs)
+- Temporary Tables
 
-## Example Analysis
+---
 
-- Total Cases vs Total Deaths
-- Population vs Infection Rate
-- Country-level rankings
-- Rolling vaccination counts using window functions
+## SQL Analysis
 
-## Dataset
-- COVID Deaths
-- COVID Vaccinations
-
-## SQL Queries
-- See the `Covid_Data_Analysis.sql` file in this repository
-
-
-📎 Author
-Mustafa Khalid
+### 1. Global Death Percentage
+```sql
+SUM(new_deaths) AS TotalDeaths,
+(SUM(new_deaths)/SUM(new_cases))*100 AS DeathPercentage
+FROM PortfolioProject.Coviddeaths;
