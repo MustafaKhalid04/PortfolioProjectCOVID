@@ -17,8 +17,6 @@ This project analyzes global COVID-19 data using SQL to uncover trends in cases,
 
 ## Tools Used
 - SQL (MySQL / SQL Server)
-- Window Functions
-- CTEs
 - Joins
 
 ## Example Analysis
@@ -32,8 +30,7 @@ This project analyzes global COVID-19 data using SQL to uncover trends in cases,
 - COVID Deaths
 - COVID Vaccinations
 
-## Author
-Mustafa KhalidSUM(new_deaths) AS TotalDeaths,
+SUM(new_deaths) AS TotalDeaths,
 (SUM(new_deaths)/SUM(new_cases))*100 AS DeathPercentage
 FROM PortfolioProject.Coviddeaths;
 7. Vaccination Analysis (Join)
@@ -79,5 +76,6 @@ Create dashboards using Tableau / Power BI
 Add data visualisations
 Automate data pipeline
 Include time-series trend analysis
+
 📎 Author
 Mustafa Khalid
