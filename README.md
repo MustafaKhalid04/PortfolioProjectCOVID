@@ -15,6 +15,14 @@ This project analyzes global COVID-19 data using SQL to uncover trends in infect
 
 ---
 
+## Key Highlights:
+- Countries show significant variation in infection rates relative to population
+- Death percentages highlight differences in healthcare impact across regions
+- Continent-level analysis reveals areas with the highest total deaths
+- Vaccination trends using rolling totals show progress over time
+
+---
+
 ## Tools Used
 - SQL (MySQL / SQL Server)
 - Joins
