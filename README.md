@@ -23,20 +23,12 @@ This project analyzes global COVID-19 data using SQL to uncover trends in infect
 
 ---
 
-## Tools Used
-- SQL (MySQL / SQL Server)
-- Joins
-- Aggregations
-- Window Functions
-- Common Table Expressions (CTEs)
-- Temporary Tables
+## Skills Used
+- SQL (Joins, Aggregations)
+- Data Cleaning & Exploration
+- Analytical Thinking
 
 ---
 
 ## SQL Analysis
-
-### 1. Global Death Percentage
-```sql
-SUM(new_deaths) AS TotalDeaths,
-(SUM(new_deaths)/SUM(new_cases))*100 AS DeathPercentage
-FROM PortfolioProject.Coviddeaths;
+- See the `Covid_Data_Analysis.sql` file in this repository
